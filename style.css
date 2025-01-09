@@ -1,0 +1,226 @@
+body {
+  font-family: 'Open Sans', sans-serif; /* Using a more modern font */
+  text-align: center;
+  background-color: #6db6e9; /* Lighter background for better contrast */
+  margin: 0;
+}
+
+h1 {
+   color: #f605ae;
+  margin-bottom: 20px;
+}
+
+h3{
+  color: #f605ae;
+}
+
+.canvas {
+  margin: 50px auto; /* Reduced top/bottom margin */
+  width: 80%;
+  text-align: center;
+  border-radius: 5px; /* Added rounded corners to the canvas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.container {
+  margin: 20px;
+  border: 10px solid #f605ae; /* Lighter border color */
+  padding: 20px;
+  background-color: #e8f0fe; /* Lighter aqua */
+  border-radius: 5px; /* Rounded corners */
+}
+
+#robot {
+  margin: 50px auto;
+  width: 200px;
+  position: relative;
+}
+
+.head {
+  background-color: #673AB7; /* More vibrant purple */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Perfectly round head */
+  position: relative;
+  margin: 0 auto;
+}
+
+.antenna {
+  background-color: #00BCD4; /* Lighter sky blue */
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  left: 22px;
+  border-radius: 5px;
+}
+
+.eye {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  border: 2px solid #333; /* Added a thin border to eyes */
+}
+
+.left-eye {
+  left: 20px;
+}
+
+.right-eye {
+  right: 20px;
+}
+
+.mouth {
+  background-color: #222;
+  width: 50px;
+  height: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+}
+
+.body {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.arm {
+  background-color: #9E9E9E; /* Lighter gray */
+  width: 20px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.torso {
+  background-color: #757575; /* Darker gray */
+  width: 80px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.legs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.leg {
+  background-color: #757575; /* Darker gray */
+  width: 30px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 3px; /* Slightly smaller border radius */
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333; /* Thinner border */
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#grey {
+  background: grey;
+}
+
+#yellow {
+  background: rgb(217, 228, 5);
+}
+
+#red {
+  background: rgb(230, 8, 8);
+}
+
+#pink {
+  background: pink;
+}
+
+@media (max-width: 768px) {
+  /* Adjust robot size */
+  #robot {
+    width: 150px; 
+  }
+
+  /* Adjust head size */
+  .head {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* Adjust antenna size */
+  .antenna {
+    width: 35px;
+    height: 20px;
+    top: -20px;
+    left: 15px;
+  }
+
+  /* Adjust eye size */
+  .eye {
+    width: 15px;
+    height: 15px;
+    top: 20px;
+  }
+
+  /* Adjust mouth size */
+  .mouth {
+    width: 40px;
+    height: 8px;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  /* Adjust arm size */
+  .arm {
+    width: 15px;
+    height: 45px;
+  }
+
+  /* Adjust torso size */
+  .torso {
+    width: 60px;
+    height: 75px;
+  }
+
+  /* Adjust leg size */
+  .leg {
+    width: 20px;
+    height: 45px;
+  }
+
+  /* Adjust button size */
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
